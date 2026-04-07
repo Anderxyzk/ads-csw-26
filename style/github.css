@@ -1,0 +1,50 @@
+/* GitHub Page Specific Styles */
+
+.card-github-link {
+    text-align: center;
+    animation: cardFadeIn 0.8s ease-out both;
+}
+
+.card-github-link h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.github-link-text {
+    margin: 1.5rem 0;
+}
+
+.github-link-text a {
+    display: inline-block;
+    font-size: 1.1rem;
+    color: var(--red-10);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid rgba(211, 47, 47, 0.3);
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    background: rgba(211, 47, 47, 0.05);
+}
+
+.github-link-text a:hover {
+    color: var(--text-primary);
+    background: var(--red-10);
+    border-color: var(--red-10);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(211, 47, 47, 0.3);
+}
+
+.github-description {
+    color: var(--grey-30-light);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-top: 1rem;
+}
+
+@media (max-width: 860px) {
+    .github-link-text a {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+    }
+}
