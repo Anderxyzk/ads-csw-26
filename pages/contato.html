@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div>
+    <div class="contact-page-main-nav-bar">
         <ul>
             <li><a href="/pages/index.html">Home</a></li>
             <li><a href="/pages/github.html">GitHub</a></li>
@@ -18,23 +18,43 @@
         </ul>
     </div>
 
-    <div>
-        <div>
-            <span>Fale comigo</span>
-            <h1>Contato</h1>
-            <p>Se você quiser saber mais sobre meu trabalho, projetos ou como posso ajudar, fique à vontade para entrar em contato. Estou disponível para colaborações, oportunidades e networking.</p>
-        </div>
-    </div>
 
-    <div>
-        <div>
-            <h3>Meus canais</h3>
-            <ol type="I">
-                <li>Email: andersoneloi.oliveira.jr@gmail.com</li>
-                <li>LinkedIn: /anderson</li>
-                <li>Telefone: (27) 99607-1841</li>
-            </ol>
-        </div>
+    <div class="contact-page-main-form">
+        <h1>Contato</h1>
+        <h3>Entre em contato comigo para discutir seu projeto e obter um orçamento personalizado. Estou ansioso para colaborar com você e criar soluções web incríveis!</h3>
+
+        <form action="/pages/contato.html" method="post">
+            <label for="name">Nome completo:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="phone">Telefone:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label>Tipo de Cliente:</label><br>
+            <input type="radio" id="pf" name="client-type" value="Pessoa Física" required>
+            <label for="pf" style="display: inline;">Pessoa Física</label><br>
+            <input type="radio" id="pj" name="client-type" value="PJ">
+            <label for="pj" style="display: inline;">PJ</label><br><br>
+
+            <label type="datetime-local">Qual melhor data e horário para contato?</label>
+            <input type="datetime-local" id="best-time" name="best-time" required><br><br>
+
+            <label>Tipo de Serviço:</label><br>
+            <select id="service-type" name="service-type" required>
+                <option value="">-- Selecione um serviço --</option>
+                <option value="Página Estática">Página Estática</option>
+                <option value="Página Dinâmica">Página Dinâmica</option>
+                <option value="Página super avançada">Página super avançada</option>
+            </select><br><br>
+
+            <label for="description">Descreva seu projeto:</label><br>
+            <textarea id="description" name="description" rows="12" placeholder="Explique detalhadamente o que você deseja que seja desenvolvido..." required style="width: 500px;"></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
     </div>
 </body>
 
