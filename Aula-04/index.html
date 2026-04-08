@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-04</title>
+</head>
+<body>
+    <h1><strong>Principais Formatações</strong></h1>
+
+    <h1><strong>Negrito / Destaque</strong></h1>
+    <p>Na frase temos uma <b>parte do texto em negrito</b> usando a tag B (Não semântica)</p>
+    <p>Na frase temos uma <strong>parte do texto em negrito</strong> usando a tag B (Com semântica)</p>
+
+    <h1><strong>Itálico / Ênfase</strong></h1>
+    <p>Nessa frase vamos entrar com uma palavra em <i>itálico</i> usando a tag i (Não semântica)</p>
+    <p>Nessa frase vamos entrar com uma palavra em <EM>itálico</EM> usando a tag EM (Com semântica)</p>
+
+    <h1><strong>Texto Marcador</strong></h1>
+    <p>Aqui vamos usar um texto com destaque <mark style="background-color: green;">de marcador de texto</mark> usando mark.</p>
+    <p>Aqui vamos usar um texto com destaque <mark>de marcador de texto</mark> usando mark.</p>
+
+    <h1><strong>Texto grande e pequeno</strong></h1>
+    <p>Estamos trabalhanod aqui com um <big>texto grande</big> e um <small>texto pequeno</small> nesta frase</p>
+
+    <h1><strong>Texto deletado</strong></h1>
+    <p>Neste paragrafo vamos trabalhar com um texto <del>que foi excluído</del> da frase (Forma semântica)</p>
+
+    <h1><strong>Texto inserido</strong></h1>
+    <p>Nesta frase vamos demonstrar como <ins>destacar um texto inserido</ins> na frase de forma semântica</p>
+    <p>Nesta frase vamos demonstrar como <span style="text-decoration: underline;">destacar um texto inserido</span> na frase de forma não semântica</p>
+
+    <h1><strong>Texto sobrescrito</strong></h1>
+    <p>Vamos demonstra uma formula da equação do segundo grau ax<sup>2</sup> + bx + c = 0 usando tag sup</p>
+
+    <h1><strong>Texto subescrito</strong></h1>
+    <p>Vamos demonstrar o texto subescrito com a formula da agua H<sub>2</sub>O</p>
+
+    <h1><strong>Texto de Código Fonte</strong></h1>
+    <p>Nesse exemplo vou demonstrar um trcho de código<br><code>
+        document.getElementById('exemplo')
+    </code> que é um comando JavaScript</p>
+    <p>Inserindo um longo código em Python: <pre><code>
+            import random
+
+            numero = random.randint(1, 10)
+            tentativas = 3
+
+            print("Adivinhe o número de 1 a 10")
+
+            while tentativas > 0:
+                palpite = int(input("Digite seu palpite: "))
+
+                if palpite == numero:
+                    print("Você acertou!")
+                    break
+                else:
+                    tentativas -= 1
+                    print("Errado! Tentativas restantes:", tentativas)
+
+            if palpite != numero:
+                print("O número era:", numero)
+    </code></pre></p>
+
+    <h1><strong>Citações (quotation) simples</strong></h1>
+    <p>Segundo Steve Jobs <q>A tecnologia move o mundo</q></p>
+
+    <h1><strong>Citações completas (livros)</strong></h1>
+    <p>Segundo Sandra Kussonoki no seu livro A dança e o ventre: <br> <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda temporibus natus, repellat ea obcaecati quo optio tempora dignissimos illum repudiandae expedita modi aliquid quis animi rerum provident nobis hic molestias!</blockquote></p>
+
+    <h1><strong>Abreviações</strong></h1>
+    <p>Estamos estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+
+    <h1><strong>Texto Invertido</strong></h1>
+    <p>Estou estudando HTML <br> <bdo dir="rtl">Estou estudando HTML</bdo></p>
+
+</body>
+</html>
