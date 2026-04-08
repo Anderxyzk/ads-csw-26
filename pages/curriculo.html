@@ -6,35 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anderson - Currículo | Portfólio</title>
     <meta name="description" content="Currículo de Anderson com experiência profissional, formações e conhecimentos técnicos.">
-    <link rel="stylesheet" href="/style/index.css">
-    <link rel="stylesheet" href="/style/curriculo.css">
+    <link rel="stylesheet" href="/style/main.css">
 </head>
 
 <body>
-    <header class="site-header">
-        <nav class="site-nav">
+    <header class="header">
+        <nav class="navbar">
             <ul class="nav-list">
-                <li><a href="/pages/index.html" class="nav-link" data-icon="">Home</a></li>
-                <li><a href="/pages/github.html" class="nav-link" data-icon="">GitHub</a></li>
-                <li><a href="/pages/curriculo.html" class="nav-link active" data-icon="">Currículo</a></li>
-                <li><a href="/pages/servicos.html" class="nav-link" data-icon="">Serviços</a></li>
-                <li><a href="/pages/contato.html" class="nav-link" data-icon="">Contato</a></li>
+                <li class="nav-item"><a href="/pages/index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/pages/github.html" class="nav-link">GitHub</a></li>
+                <li class="nav-item"><a href="/pages/curriculo.html" class="nav-link active">Currículo</a></li>
+                <li class="nav-item"><a href="/pages/servicos.html" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="/pages/contato.html" class="nav-link">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="page-shell">
-        <section class="hero-card">
-            <div class="hero-copy">
-                <span class="eyebrow">Formação e Experiência</span>
-                <h1>Currículo</h1>
-                <h3>Trajetória Profissional</h3>
-            </div>
+    <main class="page-container">
+        <section class="section">
+            <p class="text-light mb-md">Formação e Experiência</p>
+            <h1>Currículo</h1>
+            <h3>Trajetória Profissional</h3>
         </section>
 
-        <section class="content-grid">
-            <article class="card card-experience">
-                <h3>Experiência Profissional</h3>
+        <section class="section">
+            <div class="card">
+                <h3 class="card-title">Experiência Profissional</h3>
                 <table>
                     <thead>
                         <tr>
@@ -65,10 +62,10 @@
                         </tr>
                     </tbody>
                 </table>
-            </article>
+            </div>
 
-            <article class="card card-technical-knowledge">
-                <h3>Conhecimentos Técnicos</h3>
+            <div class="card mt-lg">
+                <h3 class="card-title">Conhecimentos Técnicos</h3>
                 <table>
                     <thead>
                         <tr>
@@ -110,13 +107,13 @@
                         </tr>
                     </tbody>
                 </table>
-            </article>
+            </div>
 
-            <article class="card card-download">
-                <h3>Baixe Meu Currículo</h3>
+            <div class="card mt-lg text-center">
+                <h3 class="card-title">Baixe Meu Currículo</h3>
                 <p>Confira informações detalhadas sobre minhas formações, experiências profissionais e certificações.</p>
-                <a href="/assets/curriculo-andersoneloi.pdf" download class="download-btn">Download em PDF</a>
-            </article>
+                <a href="/assets/curriculo-andersoneloi.pdf" download class="btn btn-primary mt-md">Download em PDF</a>
+            </div>
         </section>
     </main>
 </body>

@@ -6,44 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anderson - GitHub | Portfólio</title>
     <meta name="description" content="Visualize os projetos e repositórios de Anderson no GitHub.">
-    <link rel="stylesheet" href="/style/index.css">
-    <link rel="stylesheet" href="/style/github.css">
+    <link rel="stylesheet" href="/style/main.css">
 </head>
 
 <body>
-    <header class="site-header">
-        <nav class="site-nav">
+    <header class="header">
+        <nav class="navbar">
             <ul class="nav-list">
-                <li><a href="/pages/index.html" class="nav-link" data-icon="">Home</a></li>
-                <li><a href="/pages/github.html" class="nav-link active" data-icon="">GitHub</a></li>
-                <li><a href="/pages/curriculo.html" class="nav-link" data-icon="">Currículo</a></li>
-                <li><a href="/pages/servicos.html" class="nav-link" data-icon="">Serviços</a></li>
-                <li><a href="/pages/contato.html" class="nav-link" data-icon="">Contato</a></li>
+                <li class="nav-item"><a href="/pages/index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/pages/github.html" class="nav-link active">GitHub</a></li>
+                <li class="nav-item"><a href="/pages/curriculo.html" class="nav-link">Currículo</a></li>
+                <li class="nav-item"><a href="/pages/servicos.html" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="/pages/contato.html" class="nav-link">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="page-shell">
-        <section class="hero-card">
-            <div class="hero-copy">
-                <span class="eyebrow">Meus Projetos</span>
+    <main class="page-container">
+        <section class="hero">
+            <div class="hero-content">
+                <p class="text-light mb-md">Meus Projetos</p>
                 <h1>GitHub</h1>
                 <h3>Repositórios e Projetos</h3>
                 <p>Encontre meus repositórios, projetos acadêmicos e experimentos em desenvolvimento. Esta página serve como uma ponte direta para meu trabalho no GitHub. Explore os projetos que desenvolvi e acompanhe minha evolução como desenvolvedor Full-Stack.</p>
             </div>
-            <div class="profile-frame">
-                <img src="/images/anderson.jpg" alt="Anderson - Desenvolvedor Full-Stack" class="profile-img">
+            <div class="hero-image">
+                <img src="/images/anderson.jpg" alt="Anderson - Desenvolvedor Full-Stack">
             </div>
         </section>
 
-        <section class="content-grid">
-            <article class="card card-github-link">
-                <h3>Visite meu GitHub</h3>
-                <p class="github-link-text">
-                    <a href="https://github.com/Anderxyzk" target="_blank" rel="noopener noreferrer">github.com/Anderxyzk</a>
+        <section class="section">
+            <div class="card text-center">
+                <h3 class="card-title">Visite meu GitHub</h3>
+                <p class="mb-md">
+                    <a href="https://github.com/Anderxyzk" target="_blank" rel="noopener noreferrer" class="btn btn-primary">github.com/Anderxyzk</a>
                 </p>
-                <p class="github-description">Acesse meu perfil para visualizar todos os meus projetos, contribuições e atividades de desenvolvimento.</p>
-            </article>
+                <p class="text-light">Acesse meu perfil para visualizar todos os meus projetos, contribuições e atividades de desenvolvimento.</p>
+            </div>
         </section>
     </main>
 </body>
