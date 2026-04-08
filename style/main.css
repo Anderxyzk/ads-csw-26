@@ -121,17 +121,6 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--spacing-lg);
-}
-
-/* Profile Avatar */
-.profile-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--color-primary);
-    flex-shrink: 0;
 }
 
 .nav-list {
@@ -140,9 +129,6 @@ a:hover {
     gap: var(--spacing-lg);
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.nav-item {
 }
 
 .nav-link {
@@ -212,9 +198,11 @@ a:hover {
 }
 
 .hero-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: var(--radius-lg);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--color-primary);
     box-shadow: var(--shadow-md);
 }
 
