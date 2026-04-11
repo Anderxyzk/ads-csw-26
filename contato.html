@@ -87,32 +87,6 @@
             </div>
         </section>
     </main>
-    <script>
-        const clientTypeSelect = document.getElementById('client-type');
-        const cpfGroup = document.getElementById('cpf-group');
-        const cnpjGroup = document.getElementById('cnpj-group');
-
-        clientTypeSelect.addEventListener('change', function () {
-            if (this.value === 'Pessoa Física') {
-                cpfGroup.style.display = 'block';
-                cnpjGroup.style.display = 'none';
-                document.getElementById('cpf').required = true;
-                document.getElementById('cnpj').required = false;
-            } else if (this.value === 'PJ') {
-                cpfGroup.style.display = 'none';
-                cnpjGroup.style.display = 'block';
-                document.getElementById('cpf').required = false;
-                document.getElementById('cnpj').required = true;
-            } else {
-                cpfGroup.style.display = 'none';
-                cnpjGroup.style.display = 'none';
-                document.getElementById('cpf').required = false;
-                document.getElementById('cnpj').required = false;
-            }
-        });
-    </script>
-
-    <script type="module" src="../scripts/script.js"></script>
 </body>
 
 </html>
